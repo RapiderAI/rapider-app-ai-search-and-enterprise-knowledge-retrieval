@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapider AI Search &amp; Enterprise Knowledge Retrieval</title>
+  <script src="https://kit.fontawesome.com/5b23df26dc.js" crossorigin="anonymous" defer></script>
+  <script src="/assets/js/rapider-components.js" defer></script>
+  <link rel="stylesheet" href="/assets/themes/rapider-tailwind-theme.css">
+  <link rel="stylesheet" href="/assets/themes/crm-expenses-design.css">
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; }
+    iframe#appFrame { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <iframe id="appFrame" src="pages/enterprise-search/enterprise-search.html"></iframe>
+  <script>
+    const routes = {
+  "enterprise-search": "pages/enterprise-search/enterprise-search.html",
+  "verified-answers-glossary": "pages/verified-answers-glossary/verified-answers-glossary.html",
+  "go-links-directory": "pages/go-links-directory/go-links-directory.html",
+  "knowledge-gaps-board": "pages/knowledge-gaps-board/knowledge-gaps-board.html",
+  "connector-sources": "pages/connector-sources/connector-sources.html",
+  "relevance-rules": "pages/relevance-rules/relevance-rules.html",
+  "acl-retrieval-audit": "pages/acl-retrieval-audit/acl-retrieval-audit.html",
+  "research-session-detail": "pages/research-session-detail/research-session-detail.html",
+  "connector-source-detail": "pages/connector-source-detail/connector-source-detail.html",
+  "verified-answer-drawer": "pages/verified-answer-drawer/verified-answer-drawer.html",
+  "go-link-rule-drawer": "pages/go-link-rule-drawer/go-link-rule-drawer.html"
+};
+    function handleHash() {
+      const hash = window.location.hash.replace(/^#\/?/, '').split('?')[0];
+      const route = hash || 'enterprise-search';
+      const target = routes[route] || routes['enterprise-search'];
+      const iframe = document.getElementById('appFrame');
+      if (iframe) iframe.src = target;
+    }
+    window.addEventListener('hashchange', handleHash);
+    window.addEventListener('load', handleHash);
+  </script>
+</body>
+</html>

@@ -1,0 +1,3899 @@
+{
+  "name": "Rapider AI Search & Enterprise Knowledge Retrieval",
+  "key": "ai-search-and-enterprise-knowledge-retrieval",
+  "domainKey": "AIA",
+  "appSuite": {
+    "key": "AIA",
+    "title": "Rapider AI & Automation Suite"
+  },
+  "type": "App",
+  "description": "AI Search & Enterprise Knowledge Retrieval enterprise microapplication in the Rapider AI & Automation Suite.",
+  "isPublic": true,
+  "tags": [
+    "aia",
+    "ai-search-and-enterprise-knowledge-retrieval",
+    "top-200"
+  ],
+  "iconUrl": "fas fa-robot",
+  "icon": "fas fa-robot",
+  "route": "ai-search-and-enterprise-knowledge-retrieval",
+  "rating": 5,
+  "reviewCount": 0,
+  "status": "app-metadata-completed",
+  "coverPage": "<!-- Rapider Official App SOW & Specification | App #121: AI Search & Enterprise Knowledge Retrieval (ai-search-and-enterprise-knowledge-retrieval) | Domain: AIA -->\n\n# #121 AI Search & Enterprise Knowledge Retrieval (`ai-search-and-enterprise-knowledge-retrieval`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#121` — AI Search & Enterprise Knowledge Retrieval\n- **Proposed Rapider App Key:** `ai-search-and-enterprise-knowledge-retrieval`\n- **Suite / Domain & Model Prefix:** `AIA` (`Aia*`)\n- **Function Category:** 12. AI & Intelligent Automation\n- **Representative Benchmark (`P1`):** Glean\n- **Combined Feature Set Reference:** [../combined-features/121-ai-search-and-enterprise-knowledge-retrieval-features.md](../combined-features/121-ai-search-and-enterprise-knowledge-retrieval-features.md)\n\n---\n\n## 1. Executive Outcome & Target Audience\n\nRapider **AI Search & Enterprise Knowledge Retrieval (`ai-search-and-enterprise-knowledge-retrieval`)** serves as the workspace-wide Enterprise Graph, hybrid lexical-semantic search bar, and strict permission-trimmed Retrieval-Augmented Generation (RAG) engine across all built Rapider Suites (`CRM`, `FIN`, `HR`, `APM`, `MKT`, `SUP`, `OPS`, `MFG`, `COM`, `LRN`), `support` Knowledge Base (`SupKnowledgeArticle`), `#092` Internal Wiki, `#091` Drive (`ColDocumentRecord`), and `projectChannelMessage` threads. It eliminates information silos, repeated Slack/chat interruptions, ungrounded AI hallucinations, and unauthorized document exposure.\n\n- **SME Fast-Path Defaults:** Zero-config automatic indexing of all native Rapider Suites + `#091` Drive + `#092` Wiki + `SUP` KB + permitted `projectChannelMessage` channels, instant `<300 ms` hybrid search with rich Suite Genius Cards, `go/` Links (`go/benefits`, `go/roadmap`), and cited conversational answers that cleanly abstain when sources do not exist.\n- **Enterprise Progressive Disclosure:** Pre-retrieval RBAC + `#091` Shield (`RESTRICTED` / `aiAgentReadAllowed`) security trimming, multi-hop Deep Research sessions, SME-verified Q&A & Acronym Glossary cards with `30`/`90`/`180`-day expiration timers via Home `WorkItem`s, `<rapider-kanban>` Knowledge Gap & Policy Contradiction boards, ML synonym/boost relevance pipelines, Admin ACL Oversharing Simulators, and immutable `Decimal128` retrieval audit logs.\n- **Measurable Outcomes:** Cut employee time spent hunting across apps for policies, customer context, and engineering specs by 65%, deflect 40%+ of repetitive internal IT/HR/Support tickets, and guarantee **0%** unauthorized record/snippet leakage across all search and RAG queries.\n- **Top 6 Global Benchmarks Synthesized:** `P1` Glean, `P2` Microsoft Copilot Search & M365 Semantic Index, `P3` Atlassian Rovo (`Teamwork Graph`), `P4` ServiceNow AI Search & Now Assist, `P5` Coveo Relevance Cloud, and `P6` Guru Enterprise Knowledge Network.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### In-Scope\n- Event-driven federated indexing (`AiaSearchConnectorSource`, `AiaSearchIndexDocument`) across native Rapider Suites, `SupKnowledgeArticle`, `#092` Wiki, `#091` `ColDocumentRecord` OCR versions, permitted `projectChannelMessage` streams, and governed external read-only SaaS connectors.\n- Pre-query RBAC & Shield-trimmed hybrid BM25 + vector + cross-encoder search, inline-cited RAG answers, multi-hop Deep Research threads, and internal SME/Expert discovery.\n- Memorable `AiaSearchGoLink` shortcuts, time-verified `AiaSearchVerifiedAnswer` & acronym cards, `<rapider-kanban>` `AiaSearchKnowledgeGap` & policy-contradiction workflows, `AiaSearchRelevanceRule` tuning, and `AiaSearchSessionLog` audit/cost ledgers.\n\n### Out-of-Scope\n- Authoring or storing canonical wiki handbooks (owned by `#092 Internal Wiki & Knowledge Management`), binary files/PDF versions (owned by `#091 Document Management & File Sharing` + Platform Files), or customer support KB articles (owned by `SUP` `support`).\n- Creating shadow copies of `CrmAccount`, `FinInvoice`, `HrEmployee`, `ApmIssue`, or `SupTicket` rows (only lightweight chunk pointers and ACL hashes are indexed).\n- Managing external OAuth secret vaults and bi-directional webhook ETL syncs (owned by `#044 API Integration & iPaaS`, consumed here for read-only external connectors).\n- Executing autonomous destructive mutations in target suites from search bars (handoffs open pre-filled drafts or require explicit user confirmation).\n\n### Cross-Suite Ownership & Integration Contract\n\n| Domain / App | Owns | Integration Contract with `ai-search-and-enterprise-knowledge-retrieval` (`#121`) |\n| :--- | :--- | :--- |\n| **Platform Identity / RBAC** | User roles, department scopes & record ACL grants | Pre-retrieval query filter injects live caller principal & group grants **before** top-K retrieval or LLM synthesis. |\n| **Platform `projectChannelMessage`** | Team chat channels, record chatter & RAG research threads | Indexes permitted channels/threads strictly by membership; persists multi-turn Deep Research c",
+  "scopeOfWork": "<!-- Rapider Official App SOW & Specification | App #121: AI Search & Enterprise Knowledge Retrieval (ai-search-and-enterprise-knowledge-retrieval) | Domain: AIA -->\n\n# #121 AI Search & Enterprise Knowledge Retrieval (`ai-search-and-enterprise-knowledge-retrieval`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#121` — AI Search & Enterprise Knowledge Retrieval\n- **Proposed Rapider App Key:** `ai-search-and-enterprise-knowledge-retrieval`\n- **Suite / Domain & Model Prefix:** `AIA` (`Aia*`)\n- **Function Category:** 12. AI & Intelligent Automation\n- **Representative Benchmark (`P1`):** Glean\n- **Combined Feature Set Reference:** [../combined-features/121-ai-search-and-enterprise-knowledge-retrieval-features.md](../combined-features/121-ai-search-and-enterprise-knowledge-retrieval-features.md)\n\n---\n\n## 1. Executive Outcome & Target Audience\n\nRapider **AI Search & Enterprise Knowledge Retrieval (`ai-search-and-enterprise-knowledge-retrieval`)** serves as the workspace-wide Enterprise Graph, hybrid lexical-semantic search bar, and strict permission-trimmed Retrieval-Augmented Generation (RAG) engine across all built Rapider Suites (`CRM`, `FIN`, `HR`, `APM`, `MKT`, `SUP`, `OPS`, `MFG`, `COM`, `LRN`), `support` Knowledge Base (`SupKnowledgeArticle`), `#092` Internal Wiki, `#091` Drive (`ColDocumentRecord`), and `projectChannelMessage` threads. It eliminates information silos, repeated Slack/chat interruptions, ungrounded AI hallucinations, and unauthorized document exposure.\n\n- **SME Fast-Path Defaults:** Zero-config automatic indexing of all native Rapider Suites + `#091` Drive + `#092` Wiki + `SUP` KB + permitted `projectChannelMessage` channels, instant `<300 ms` hybrid search with rich Suite Genius Cards, `go/` Links (`go/benefits`, `go/roadmap`), and cited conversational answers that cleanly abstain when sources do not exist.\n- **Enterprise Progressive Disclosure:** Pre-retrieval RBAC + `#091` Shield (`RESTRICTED` / `aiAgentReadAllowed`) security trimming, multi-hop Deep Research sessions, SME-verified Q&A & Acronym Glossary cards with `30`/`90`/`180`-day expiration timers via Home `WorkItem`s, `<rapider-kanban>` Knowledge Gap & Policy Contradiction boards, ML synonym/boost relevance pipelines, Admin ACL Oversharing Simulators, and immutable `Decimal128` retrieval audit logs.\n- **Measurable Outcomes:** Cut employee time spent hunting across apps for policies, customer context, and engineering specs by 65%, deflect 40%+ of repetitive internal IT/HR/Support tickets, and guarantee **0%** unauthorized record/snippet leakage across all search and RAG queries.\n- **Top 6 Global Benchmarks Synthesized:** `P1` Glean, `P2` Microsoft Copilot Search & M365 Semantic Index, `P3` Atlassian Rovo (`Teamwork Graph`), `P4` ServiceNow AI Search & Now Assist, `P5` Coveo Relevance Cloud, and `P6` Guru Enterprise Knowledge Network.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### In-Scope\n- Event-driven federated indexing (`AiaSearchConnectorSource`, `AiaSearchIndexDocument`) across native Rapider Suites, `SupKnowledgeArticle`, `#092` Wiki, `#091` `ColDocumentRecord` OCR versions, permitted `projectChannelMessage` streams, and governed external read-only SaaS connectors.\n- Pre-query RBAC & Shield-trimmed hybrid BM25 + vector + cross-encoder search, inline-cited RAG answers, multi-hop Deep Research threads, and internal SME/Expert discovery.\n- Memorable `AiaSearchGoLink` shortcuts, time-verified `AiaSearchVerifiedAnswer` & acronym cards, `<rapider-kanban>` `AiaSearchKnowledgeGap` & policy-contradiction workflows, `AiaSearchRelevanceRule` tuning, and `AiaSearchSessionLog` audit/cost ledgers.\n\n### Out-of-Scope\n- Authoring or storing canonical wiki handbooks (owned by `#092 Internal Wiki & Knowledge Management`), binary files/PDF versions (owned by `#091 Document Management & File Sharing` + Platform Files), or customer support KB articles (owned by `SUP` `support`).\n- Creating shadow copies of `CrmAccount`, `FinInvoice`, `HrEmployee`, `ApmIssue`, or `SupTicket` rows (only lightweight chunk pointers and ACL hashes are indexed).\n- Managing external OAuth secret vaults and bi-directional webhook ETL syncs (owned by `#044 API Integration & iPaaS`, consumed here for read-only external connectors).\n- Executing autonomous destructive mutations in target suites from search bars (handoffs open pre-filled drafts or require explicit user confirmation).\n\n### Cross-Suite Ownership & Integration Contract\n\n| Domain / App | Owns | Integration Contract with `ai-search-and-enterprise-knowledge-retrieval` (`#121`) |\n| :--- | :--- | :--- |\n| **Platform Identity / RBAC** | User roles, department scopes & record ACL grants | Pre-retrieval query filter injects live caller principal & group grants **before** top-K retrieval or LLM synthesis. |\n| **Platform `projectChannelMessage`** | Team chat channels, record chatter & RAG research threads | Indexes permitted channels/threads strictly by membership; persists multi-turn Deep Research conversations as `projectChannelMessage` threads. |\n| **Platform Home `WorkItem`** | SME re-verification reminders, Knowledge Gap assignments & contradiction alerts | Expired `AiaSearchVerifiedAnswer`s and assigned `AiaSearchKnowledgeGap`s create and resolve canonical Home `WorkItem`s. |\n| **`COL` `#091` (`documents`) & `#092` (`wiki`)** | `ColDocumentRecord`, `ColDocumentVersion`, Wiki Spaces/Pages | Honors `ColDocumentRecord.classification == RESTRICTED` and `aiAgentReadAllowed == false`; routes Knowledge Gaps into `#092` Wiki drafts. |\n| **`SUP` (`support`) & `HR` (`employees`, `hrs`)** | `SupKnowledgeArticle`, `SupTicket`, `HrEmployee`, `HrCase` | Surfaces `SupKnowledgeArticle`s for deflection, resolves SME profiles from `HrEmployee`, and escalates unresolved queries to pre-filled `SupTicket`/`HrCase` drafts. |\n| **`CRM` / `FIN` / `APM` / `OPS` / `MFG` / `COM` / `LRN`** | Canonical operational & financial suite records | Renders field-ACL-aware Genius Cards in search results; tracks `Decimal128` RAG token/rerank spend against `FinBudget`. |\n\n---\n\n## 3. Primary Web Pages & Sidebar Navigation Architecture\n\nEvery visible sidebar section strictly contains **3 or more visible items** (`displayOnMenu: true`), while deep-research views, connector inspectors, and configuration drawers set `displayOnMenu: false`.\n\n| # | Route | Page Title | Sidebar Section | Menu Visible | Key Components & UX |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | `enterprise-search` | Unified Search & Deep Research | `Search & Knowledge` | `true` | Instant hybrid search + RAG/Deep Research mode toggle (`findSWR`/`countSWR` recent sessions), Suite/Type/Date filter pills, `#activeFilterTagsBar` with `Clear all`, Genius Cards, SME Finder, clickable session -> `research-session-detail`. |\n| 2 | `verified-answers-glossary` | Verified Answers & Acronyms | `Search & Knowledge` | `true` | Table of `AiaSearchVerifiedAnswer` Q&A cards and Acronym/Codename definitions, verification expiry badges, icon+text Edit and icon-only Delete. |\n| 3 | `go-links-directory` | `go/` Links & Shortcuts | `Search & Knowledge` | `true` | Searchable registry of `AiaSearchGoLink` shortcuts (`go/benefits`, `go/incident-sop`), owner `HrEmployee`, redirect counts, and `+ New go/ Link` button. |\n| 4 | `knowledge-gaps-board` | Knowledge Gaps & Hygiene | `Search & Knowledge` | `true` | `<rapider-kanban>` board (`DETECTED_GAP` -> `SME_ASSIGNED` -> `DRAFTING_IN_SUITE` -> `VERIFIED_PINNED` -> `RESOLVED`) + list toggle for unanswered clusters & policy contradictions. |\n| 5 | `connector-sources` | Suite & External Connectors | `Indexing & Governance` | `true` | Health table of `AiaSearchConnectorSource` native Rapider Suite indexers and external connectors, sync lag, indexed chunk counts, clickable name -> `connector-source-detail`. |\n| 6 | `relevance-rules` | Synonyms & Ranking Rules | `Indexing & Governance` | `true` | Registry of `AiaSearchRelevanceRule` synonym rings, authority weights, and recency decay policies with inline ranking preview. |\n| 7 | `acl-retrieval-audit` | ACL Simulator & Audit Log | `Indexing & Governance` | `true` | Role/Department ACL Oversharing Simulator (metadata envelope check) + `AiaSearchSessionLog` latency, faithfulness, deflection rate, and `Decimal128` cost telemetry. |\n| 8 | `research-session-detail` | Grounded Answer & Citations | *(Hidden)* | `false` | Full `projectChannelMessage` Deep Research thread, clickable passage-highlighted citations (`[Doc v2, p.4]`), NLI faithfulness badges, 1-click Escalate to `SupTicket`/`HrCase`, and `#btnGoBack`. |\n| 9 | `connector-source-detail` | Connector Sync & ACL Inspector | *(Hidden)* | `false` | Incremental CDC cursor status, ACL group sync diagnostics, Shield `RESTRICTED` exclusion counters, manual re-index trigger, and `#btnGoBack`. |\n| 10 | `verified-answer-drawer` | Verified Card & Acronym Drawer | *(Hidden)* | `false` | Author/edit `AiaSearchVerifiedAnswer` markdown, cited source bindings, `verifyIntervalDays`, SME on-call phone (`<rapider-phone-input>`), and `try/catch/finally` auto-close. |\n| 11 | `go-link-rule-drawer` | `go/` Link & Synonym Drawer | *(Hidden)* | `false` | Create/edit `go/{slug}` mappings or `AiaSearchRelevanceRule` synonym/boost entries with `try/catch/finally` auto-close. |\n\n**Rapider UI Standards Enforced Across All Pages:**\n- All initial data loads invoke `findSWR` and `countSWR` with zero manual `isDeleted` filter clauses, paired with defensive client-side `item.isDeleted !== true` filtering and immediate cache invalidation.\n- Tables contain **zero** standalone `View` buttons in `Actions`; primary identifiers navigate directly to detail routes; `Edit` uses icon+text; `Delete` uses icon-only backed by `#rapiderConfirmOkBtn` modal confirmation and zero `window.alert`/`confirm`/`prompt`.\n- `<rapider-kanban>` powers `knowledge-gaps-board`, `<rapider-phone-input>` captures SME escalation contact numbers in `verified-answer-drawer`, and primary/danger buttons enforce `#ffffff !important` white text.\n\n---\n\n## 4. Canonical Data Models (`Aia*`)\n\nAll models omit `projectId`, use platform UUIDs (`00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx` in seed fixtures), represent weights/scores/costs in `Decimal128`, and maintain optimistic `version` counters.\n\n| Model Name | Key Fields & Types | Relationships & External Refs | Invariants & Lifecycle |\n| :--- | :--- | :--- | :--- |\n| **`AiaSearchConnectorSource`** | `id` (UUID), `connectorKey` (string, unique), `name` (string), `sourceCategory` (`RAPIDER_SUITE_NATIVE` \\| `COL_DRIVE_091` \\| `COL_WIKI_092` \\| `SUP_KB` \\| `PLATFORM_CHANNEL_MSG` \\| `EXTERNAL_SAAS`), `syncMode` (`REALTIME_CDC` \\| `INCREMENTAL_POLL`), `cursorToken` (string), `indexedDocCount` (int), `aclSyncHealthy` (boolean), `lastSyncedAt` (datetime), `status` (`ACTIVE` \\| `PAUSED` \\| `DEGRADED_ACL_HOLD`), `version` (int) | `ipaasConnectionId` -> `#044` Connection (nullable for native suites); `ownerUserId` -> Platform User | **Fail-Closed ACL Invariant:** If `aclSyncHealthy == false` (`DEGRADED_ACL_HOLD`), newly ingested external documents remain non-retrievable until ACL group sync recovers. |\n| **`AiaSearchIndexDocument`** | `id` (UUID), `docPointerKey` (string, unique), `sourceSuite` (string), `sourceModel` (string), `sourceRecordId` (UUID), `title` (string), `deepLinkRoute` (string), `classification` (`PUBLIC` \\| `INTERNAL` \\| `CONFIDENTIAL` \\| `RESTRICTED`), `aiAgentReadAllowed` (boolean), `aclPrincipalsHash` (string), `chunkCount` (int), `sourceUpdatedAt` (datetime), `lastIndexedAt` (datetime), `version` (int) | `connectorId` -> `AiaSearchConnectorSource`; `authorEmployeeId` -> `HrEmployee` (`HR`) | Stores zero shadow copies of mutable financial/HR fields; when `aiAgentReadAllowed == false` or `classification == RESTRICTED`, chunks are excluded from general RAG synthesis. |\n| **`AiaSearchGoLink`** | `id` (UUID), `slug` (string, unique, lowercase `[a-z0-9-]`), `title` (string), `targetUrlOrRoute` (string), `description` (string), `redirectCount` (int), `isVerifiedCorporate` (boolean), `status` (`ACTIVE` \\| `DEPRECATED`), `version` (int) | `ownerEmployeeId` -> `HrEmployee` (`HR`); `departmentId` -> `HrDepartment` (`HR`) | `slug` is workspace-unique; redirecting never bypasses target route/document RBAC checks. |\n| **`AiaSearchVerifiedAnswer`** | `id` (UUID), `cardCode` (string, unique), `cardKind` (`VERIFIED_QA` \\| `ACRONYM_GLOSSARY` \\| `PINNED_ANNOUNCEMENT`), `termOrQuestion` (string), `triggerQueriesJson` (json), `answerMarkdown` (string), `citationsJson` (json: recordId, version, page), `verifierOnCallPhone` (string), `verifyIntervalDays` (int), `lastVerifiedAt` (datetime), `nextVerifyDueAt` (datetime), `verificationStatus` (`VERIFIED_FRESH` \\| `DUE_REVERIFICATION` \\| `EXPIRED_DEMOTED`), `version` (int) | `verifierEmployeeId` -> `HrEmployee` (`HR`); `reverifyWorkItemId` -> Home `WorkItem` | Cards must include `>= 1` canonical citation; when `now > nextVerifyDueAt`, status flips to `EXPIRED_DEMOTED` (removing top-pin boost) and opens a Home `WorkItem`. |\n| **`AiaSearchKnowledgeGap`** | `id` (UUID), `gapNumber` (string, unique), `gapKind` (`ZERO_RESULT_CLUSTER` \\| `LOW_CONFIDENCE_RAG` \\| `POLICY_CONTRADICTION` \\| `DUPLICATE_OVERLAP`), `topicClusterTitle` (string), `sampleAnonymizedQueriesJson` (json), `occurrenceCount` (int), `conflictingDocIdsJson` (json), `kanbanStage` (`DETECTED_GAP` \\| `SME_ASSIGNED` \\| `DRAFTING_IN_SUITE` \\| `VERIFIED_PINNED` \\| `RESOLVED`), `version` (int) | `assignedSmeEmployeeId` -> `HrEmployee` (`HR`); `remediationWorkItemId` -> Home `WorkItem`; `resolvedTargetSuite` / `resolvedTargetRecordId` -> `#092` Wiki / `SupKnowledgeArticle` / `AiaSearchVerifiedAnswer` | Cannot transition to `RESOLVED` without linking a published `#092` Wiki page, `SupKnowledgeArticle`, or `VERIFIED_FRESH` `AiaSearchVerifiedAnswer`. |\n| **`AiaSearchRelevanceRule`** | `id` (UUID), `ruleCode` (string, unique), `name` (string), `ruleType` (`SYNONYM_RING` \\| `SOURCE_AUTHORITY_BOOST` \\| `RECENCY_DECAY` \\| `QUERY_PIN_BURY`), `synonymsJson` (json), `targetSourceCategory` (string), `boostWeight` (Decimal128), `status` (`ACTIVE` \\| `INACTIVE`), `version` (int) | `createdByUserId` -> Platform User | Relevance rules only reorder documents already permitted by pre-retrieval ACL trimming (can never surface unauthorized records). |\n| **`AiaSearchSessionLog`** | `id` (UUID), `sessionRef` (string, unique), `queryMode` (`INSTANT_HYBRID` \\| `GROUNDED_RAG` \\| `DEEP_RESEARCH`), `aclPrincipalSnapshotHash` (string), `retrievedAuthorizedCount` (int), `excludedRestrictedCount` (int), `abstainedNoSource` (boolean), `faithfulnessScore` (Decimal128), `latencyMs` (int), `userFeedback` (`NONE` \\| `HELPFUL` \\| `NOT_HELPFUL`), `deflectedTicket` (boolean), `tokenCostAmount` (Decimal128), `currencyCode` (string), `executedAt` (datetime), `version` (int) | `userId` -> Platform User; `departmentId` -> `HrDepartment` (`HR`); `budgetId` -> `FinBudget` (`FIN`); `researchThreadId` -> `projectChannelMessage`; `escalatedTicketId` -> `SupTicket` / `HrCase` | Strictly append-only audit and cost record; raw query strings containing detected PII secrets are scrubbed prior to analytical clustering. |\n\n---\n\n## 5. Core End-to-End User Journeys\n\n1. **SME Instant Permission-Trimmed RAG & Ticket Deflection:**\n   - A Sales Rep asks `#/enterprise-search` *\"What is our SLA credit cap for Enterprise tier and who owns security questionnaires?\"* Pre-retrieval ACL trimming queries `#092` Wiki, `SupKnowledgeArticle`, and `#091` `ColDocumentRecord` (automatically excluding `RESTRICTED` board files), returning an inline-cited answer (`[1] Enterprise MSA Playbook v3, p.7`, `[2] KB-204`) plus an SME Genius Card for the Security Lead (`HrEmployee`), recording a self-service ticket deflection.\n2. **Multi-Hop Customer 360 Deep Research (`CRM` + `SUP` + `APM` + `projectChannelMessage`):**\n   - Before an executive renewal call, an Account Executive runs `DEEP_RESEARCH` for *\"Summarize Northwind's open P1 support tickets, blocking engineering issues, and contract renewal terms\"*. The engine decomposes the query across `CrmAccount`, `CrmContract`, `SupTicket`, `ApmIssue`, and `#090`/`projectChannelMessage` notes authorized for that AE, persisting a fully cited briefing in `#/research-session-detail`.\n3. **Policy Contradiction & Knowledge Gap Remediation on `<rapider-kanban>`:**\n   - Nightly hygiene analysis detects 38 unanswered queries for *\"EU parental leave carryover\"* plus a contradiction between an outdated `#091` PDF and `#092` Wiki, creating two `AiaSearchKnowledgeGap` cards on `#/knowledge-gaps-board` (`<rapider-kanban>`) and assigning Home `WorkItem`s to an HR Knowledge Steward. The Steward clicks **Create `#092` Wiki Draft**, publishes the harmonized policy, pins a `VERIFIED_FRESH` answer, and moves the card to `RESOLVED`.\n4. **SME Verification Timer Expiry & On-Call Alert:**\n   - A `90`-day `AiaSearchVerifiedAnswer` for `SOC2-Bridge-Letter` reaches `nextVerifyDueAt`, automatically flipping to `EXPIRED_DEMOTED`, opening a Home `WorkItem` for the Compliance SME (configured with `<rapider-phone-input>` on-call contact in `#/verified-answer-drawer`), and restoring top-pin ranking immediately once re-verified.\n5. **Security Admin ACL Oversharing Simulation & `RESTRICTED` Guardrail Check:**\n   - On `#/acl-retrieval-audit`, a Security Admin runs the ACL Simulator for role `Contractor - Marketing` against sensitive keywords (`\"M&A\"`, `\"Payroll\"`), verifying via metadata envelopes that zero `RESTRICTED` `#091` documents or `HrPayrollRun` records are retrievable.\n6. **Search Session Click-Through, Faceted Filter Tags & Back Restoration:**\n   - On `#/enterprise-search`, a Product Manager filters by `Suite: \"APM\"` and `Verified Only: \"true\"` (`#activeFilterTagsBar` shows `Suite: \"APM\" ✕` and `Verified Only: \"true\" ✕`), clicks a research session row -> `#/research-session-detail`, inspects highlighted source passages, and clicks `#btnGoBack` — restoring exact filter state and scroll offset.\n\n---\n\n## 6. Consolidated Feature Priorities & Work Packages\n\n### `P0` Foundation Work Packages\n- **WP-P0-1 Federated Multi-Suite, KB, Wiki, Drive & Chat Indexing (`SRCH-001`–`SRCH-003`):** Deliver `AiaSearchConnectorSource` and `AiaSearchIndexDocument` real-time CDC indexing across all Rapider Suites, `SupKnowledgeArticle`, `#092` Wiki, `#091` Drive OCR, and permitted `projectChannelMessage` threads with SME Expert Graph resolution.\n- **WP-P0-2 Pre-Retrieval ACL/Shield Trimming, Hybrid Reranking & Cited RAG (`SRCH-005`–`SRCH-008`, `SRCH-015`, `SRCH-021`, `SRCH-022`):** Enforce fail-closed pre-query RBAC + `#091` `RESTRICTED` filtering, `<300 ms` BM25 + vector + cross-encoder search, inline passage-highlighted citations with hallucination abstention, Suite Genius Cards, and `#activeFilterTagsBar` faceted filtering.\n- **WP-P0-3 `go/` Links, Verified Answers/Acronyms, Knowledge Gap `<rapider-kanban>` & Audit Ledger (`SRCH-011`, `SRCH-012`, `SRCH-017`, `SRCH-018`):** Ship `AiaSearchGoLink` resolution, `AiaSearchVerifiedAnswer` Q&A/glossary cards, `<rapider-kanban>` `AiaSearchKnowledgeGap` board, and append-only `Decimal128` `AiaSearchSessionLog`.\n\n### `P1` Scale & Enterprise Governance Work Packages\n- **WP-P1-1 External SaaS Connectors, Deep Research & Prompt-Injection Defense (`SRCH-004`, `SRCH-009`, `SRCH-010`):** Add external read-only connectors with fail-closed ACL group sync, multi-hop Deep Research in `projectChannelMessage`, and indirect prompt-injection sanitization.\n- **WP-P1-2 SME Expiry `WorkItem`s, Relevance Rules, Deflection Handoffs & ACL Simulator (`SRCH-013`, `SRCH-014`, `SRCH-016`, `SRCH-019`, `SRCH-020`):** Deliver scheduled SME re-verification Home `WorkItem`s (`<rapider-phone-input>`), `AiaSearchRelevanceRule` synonyms/boosts, 1-click `SupTicket`/`HrCase` escalation, `#092`/`SUP` draft creation, and Admin ACL Oversharing Simulator.\n\n### `P2` Adjacent & Grounded AI Work Packages\n- **WP-P2-1 Policy Contradiction Detection, Deduplication, Thread Distillation & NLI Check (`SRCH-023`–`SRCH-028`):** Build cross-repository contradiction alerts, >88% duplicate consolidation recommendations, public `projectChannelMessage` to Verified Card distillation, role-aware `HrDepartment` onboarding digests, acronym harvesting, and `Decimal128` NLI sentence-faithfulness verification.\n\n---\n\n## 7. Roles, Permissions & Field-Level Governance\n\n| Role | Permitted Actions | Restricted / Field-Level Boundaries |\n| :--- | :--- | :--- |\n| **Workspace Member** | Execute hybrid search, RAG, and Deep Research strictly over records permitted by their own RBAC grants; resolve `go/` Links; escalate unresolved queries to `SupTicket`/`HrCase`. | Zero visibility into unauthorized suite rows, private `projectChannelMessage` threads, or `RESTRICTED` `#091` files; cannot pin corporate Verified Answers. |\n| **Subject Matter Expert (`SME`)** | Author and re-verify assigned `AiaSearchVerifiedAnswer`s and Acronym cards, resolve `AiaSearchKnowledgeGap`s via Home `WorkItem`, create team `go/` Links. | Cannot alter `AiaSearchConnectorSource` ACL mappings or view other users' search histories. |\n| **Knowledge & Search Steward** | Manage workspace `go/` Links, `AiaSearchRelevanceRule` synonyms/boosts, triage `<rapider-kanban>` Knowledge Gaps and Policy Contradictions. | Cannot bypass source-suite RBAC or read private documents via admin dashboards. |\n| **Security & AI Governance Admin** | Configure `AiaSearchConnectorSource`s, pause degraded ACL connectors, run metadata-only ACL Oversharing Simulations, audit `AiaSearchSessionLog` cost/telemetry (e.g., `\\$1,200.00`/month budget). | Cannot disable pre-retrieval ACL trimming, override `#091` `RESTRICTED` AI blocks without a `#091` Security `WorkItem`, or mutate `AiaSearchSessionLog`. |\n\n---\n\n## 8. Technical APIs, Guarded Commands, Events & `requiredWorkflows`\n\n### Guarded Command Contracts\nAll commands require `{ idempotencyKey: string, correlationId: string, expectedVersion: number }`:\n- `aia.search.query.executeGroundedRag` — Resolves caller RBAC + `#091` Shield predicates, executes pre-trimmed hybrid retrieval + cross-encoder rerank, sanitizes prompt injections, runs NLI faithfulness check, and appends `AiaSearchSessionLog`.\n- `aia.search.verifiedAnswer.verifyOrPublish` — Validates non-empty canonical citations, sets `nextVerifyDueAt`, resolves linked `reverifyWorkItemId`, and updates ranking cache.\n- `aia.search.gap.dispatchDraftToSuite` — Creates a linked draft `#092` Wiki page or `SupKnowledgeArticle` and advances `AiaSearchKnowledgeGap.kanbanStage` to `DRAFTING_IN_SUITE`.\n- `aia.search.connector.enforceAclHold` — Transitions `AiaSearchConnectorSource` to `DEGRADED_ACL_HOLD` automatically if external ACL sync fails.\n\n### Domain Events (Kafka) & `requiredWorkflows`\n- **Published Events:** `aia.search.gap_detected`, `aia.search.verified_answer_expired`, `aia.search.contradiction_flagged`, `aia.search.ticket_deflected`, `aia.search.connector_acl_degraded`.\n- **Consumed Events:** CDC domain events across `crm.*`, `fin.*`, `hr.*`, `apm.*`, `sup.*`, `col.document.*` (including immediate ACL/classification updates), `col.wiki.*`, `platform.channel_message.created`, `platform.workitem.resolved`.\n- **`requiredWorkflows` in `app.manifest.json`:** `aiaSearchRealtimeCdcAndChunkEmbedWf`, `aiaSearchVerificationExpiryMonitorWf`, `aiaSearchKnowledgeGapAndContradictionScanWf`, `aiaSearchExternalConnectorAclSyncWf`.\n\n### Grounded Rapider AI Contract\n- Every RAG and Deep Research turn strictly executes **pre-retrieval ACL & Shield trimming**, attaches clickable `[RecordID, Version/Page]` citations for every claim, abstains (`abstainedNoSource = true`) when authorized evidence is absent, strips indirect prompt-injection instructions from untrusted content, and never mutates any suite record (`SupTicket`, `HrCase`, `#092` Wiki) without explicit human confirmation.\n\n---\n\n## 9. Security, Privacy, Compliance & Non-Functional Requirements\n\n- **Zero-Trust Retrieval Security (SOC 2 Type II, ISO 27001, GDPR Right-to-Erasure, HIPAA):** Pre-retrieval ACL enforcement guarantees zero existence/snippet side-channel leakage; soft-deleting or revoking access on a source `#091` document, `SupTicket`, or `projectChannelMessage` purges/updates its index entry via CDC in `<5 seconds`; query telemetry scrubs PII before Knowledge Gap clustering.\n- **Exact Financial & Scoring Precision:** Token/rerank costs (e.g., `\\$0.0042`/query), `boostWeight`, and `faithfulnessScore` (`0.00`–`1.00`) use `Decimal128`.\n- **Latency & Scale:** Hybrid lexical+vector retrieval returns in `<300 ms` (`P95`); initial UI views load in `<200 ms` via `findSWR`/`countSWR`.\n- **Accessibility & Responsive UX:** WCAG 2.2 AA compliant keyboard combobox/facet navigation, screen-reader citation announcements, `#ffffff !important` white text on primary/danger buttons, and responsive layouts across `390px`, `768px`, and `1440px`.\n\n---\n\n## 10. Deterministic Acceptance Criteria\n\n1. **Sidebar 3+ Grouping Standard:** `Search & Knowledge` contains 4 visible items and `Indexing & Governance` contains 3 visible items (`>= 3` per group); `research-session-detail`, `connector-source-detail`, `verified-answer-drawer`, and `go-link-rule-drawer` set `displayOnMenu: false`.\n2. **SWR Reads & Clean Soft-Delete Queries:** All page reads invoke `findSWR` / `countSWR` with zero manual `isDeleted` filter clauses and filter `item.isDeleted !== true` in client memory.\n3. **Table Actions & Native Dialog Ban:** Tables omit standalone `View` buttons; primary identifiers (`sessionRef`, `cardCode`, `slug`, `connectorKey`, `ruleCode`) navigate to detail views or drawers; `Edit` uses icon+text; `Delete` uses icon-only with `#rapiderConfirmOkBtn` confirmation and zero `window.alert`/`confirm`/`prompt`.\n4. **Rapider Custom Elements Adoption:** `knowledge-gaps-board` renders stages via `<rapider-kanban>` and `verified-answer-drawer` captures SME escalation phones via `<rapider-phone-input>`.\n5. **Search, `#activeFilterTagsBar` & `Clear all`:** Applying Suite, Content Type, or Verification filters displays `#activeFilterTagsBar` with escaped dismissible chips and synchronous `Clear all` restoration across list and `<rapider-kanban>` views.\n6. **Drawer Lifecycle & `finally` Button Reset:** Saving or cancelling `verified-answer-drawer` or `go-link-rule-drawer` closes the drawer, invalidates SWR cache, broadcasts updates, and resets button state inside a `finally` block.\n7. **Pre-Retrieval ACL Zero-Leakage Invariant:** Querying for exact unique keywords inside an unauthorized `CrmContract`, private `projectChannelMessage`, or `RESTRICTED` (`aiAgentReadAllowed = false`) `#091` `ColDocumentRecord` returns zero citations, zero snippets, and `abstainedNoSource = true`.\n8. **Fail-Closed Connector ACL Hold:** When an `AiaSearchConnectorSource` enters `DEGRADED_ACL_HOLD` (`aclSyncHealthy = false`), newly synced chunks are deterministically excluded from retrieval until ACL health recovers.\n9. **Citation Mandatory & Verification Expiry Demotion:** Publishing an `AiaSearchVerifiedAnswer` with zero citations fails validation; passing `nextVerifyDueAt` transitions status to `EXPIRED_DEMOTED` and opens a canonical Home `WorkItem`.\n10. **Knowledge Gap Resolution Gate:** Moving an `AiaSearchKnowledgeGap` to `RESOLVED` fails unless linked to a published `#092` Wiki page, `SupKnowledgeArticle`, or `VERIFIED_FRESH` `AiaSearchVerifiedAnswer`.\n11. **Immutable `Decimal128` Session Audit Log:** `AiaSearchSessionLog` records exact `Decimal128` `faithfulnessScore` and `tokenCostAmount` values and rejects update/delete mutations.\n12. **Click-Through Navigation & Theme Validation:** Real click-through `#/enterprise-search` -> `#/research-session-detail` -> `#btnGoBack` preserves active filter chips without `<base href>` URL traps, and all 11 routes pass dark/light `validate_theme` with `#ffffff !important` primary/danger button contrast.\n13. **Prompt-Injection Sanitization & Abstention Guardrail:** Untrusted indexed passages containing embedded instruction overrides cannot alter system prompts or bypass `ColDocumentRecord.classification == RESTRICTED` exclusions.\n14. **Optimistic Mutation, SWR Invalidation & 6-Pillar E2E Coverage:** Editing/deleting `go/` Links, Verified Answers, or Knowledge Gaps updates list and `<rapider-kanban>` views optimistically with SWR cache invalidation, and `e2e/expectations.json` covers all 6 mandatory E2E pillars across all 11 routes.\n15. **CDC Access-Revocation Propagation:** Revoking folder ACLs or soft-deleting a `#091` `ColDocumentRecord`, `SupTicket`, or `projectChannelMessage` immediately suppresses its chunks from subsequent retrieval queries.\n",
+  "thumbnailUrl": "",
+  "isolationScope": "ENTERPRISE_SHARED",
+  "dataModels": [
+    {
+      "name": "ApmIssue",
+      "title": "Issue",
+      "description": "An actionable item such as a bug, feature, or task.",
+      "domainName": "Rapider Project & Portfolio Suite",
+      "domainKey": "APM",
+      "datatableName": "ApmIssue",
+      "dataTableName": "ApmIssue",
+      "sqlTableName": "apm_issue",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }} - {{ status }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title",
+            "projectId",
+            "type"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "description",
+            "status"
+          ],
+          "additionalPrompt": "If the issue type is 'Bug', ensure a description is provided detailing the steps to reproduce.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Priority must be one of: Low, Medium, High, Critical."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "projectId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "When updating status to 'Done', ensure all required fields are filled.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Cannot change type from Bug to Feature without user confirmation.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify closed issues.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 25,
+          "defaultContextLimit": 15,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Group issues by status and priority when summarizing."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete issues that are currently In Progress.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "projectId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "epicId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sprintId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "storyPoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "labelIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "assigneeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "reporterId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "project",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "projectId",
+          "targetModel": "ApmProject",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The project this issue belongs to."
+        },
+        {
+          "name": "epic",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "epicId",
+          "targetModel": "ApmEpic",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The epic this issue belongs to."
+        },
+        {
+          "name": "sprint",
+          "type": "belongsTo",
+          "sourceModel": "ApmIssue",
+          "sourceField": "sprintId",
+          "targetModel": "ApmSprint",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The sprint this issue is assigned to."
+        },
+        {
+          "name": "labels",
+          "type": "referencesMany",
+          "sourceModel": "ApmIssue",
+          "sourceField": "labelIds",
+          "targetModel": "ApmLabel",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Labels categorized for this issue."
+        }
+      ]
+    },
+    {
+      "name": "ColDocumentRecord",
+      "title": "Document Record",
+      "description": "`CONFIDENTIAL` \\",
+      "domainName": "Rapider Collaboration Suite",
+      "domainKey": "COL",
+      "datatableName": "ColDocumentRecord",
+      "dataTableName": "ColDocumentRecord",
+      "sqlTableName": "col_document_record",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Document Record, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "docNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fileName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "mimeType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "classification",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "ColDocumentVersion",
+      "title": "Document Version",
+      "description": "`QUARANTINED`), `changeNotes` (string), `ocrTextIndexed` (boolean), `uploadedAt` (datetime), `version` (int)",
+      "domainName": "Rapider Collaboration Suite",
+      "domainKey": "COL",
+      "datatableName": "ColDocumentVersion",
+      "dataTableName": "ColDocumentVersion",
+      "sqlTableName": "col_document_version",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Document Version, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "versionLabel",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "byteSize",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sha256Checksum",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "virusScanStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "CrmAccount",
+      "title": "Account",
+      "description": "Customer entity with credit limit, balance, and risk profile.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmAccount",
+      "dataTableName": "CrmAccount",
+      "sqlTableName": "crm_account",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ code }} - {{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "ledgerId",
+            "code",
+            "name",
+            "type"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "ledgerId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 20,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "creditLimit",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentBalance",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "riskFlag",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountOwner",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountType",
+          "type": "string",
+          "description": "Allowed values: PROSPECT, CUSTOMER, PARTNER, COMPETITOR, HOUSEHOLD",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ],
+          "options": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ]
+        },
+        {
+          "name": "customerTier",
+          "type": "string",
+          "description": "Allowed values: ENTERPRISE, MID_MARKET, SMB, VIP",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ],
+          "options": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ]
+        },
+        {
+          "name": "supportSlaTier",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "primaryDomain",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentAccountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinLegalEntity",
+          "referenceField": "id"
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revenue",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "website",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerPersonId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "ledger",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ledgerId",
+          "targetModel": "FinLedger",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The ledger this account belongs to."
+        },
+        {
+          "name": "parentAccount",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "parentAccountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount parentAccount foreign key link to CrmAccount."
+        },
+        {
+          "name": "ownerEmployee",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ownerEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount ownerEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "territory",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "territoryId",
+          "targetModel": "CrmTerritory",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount territory foreign key link to CrmTerritory."
+        },
+        {
+          "name": "defaultBillingProfile",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "defaultBillingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount defaultBillingProfile foreign key link to FinBillingProfile."
+        }
+      ]
+    },
+    {
+      "name": "FinBudget",
+      "title": "Budget",
+      "description": "A financial budget for a period.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinBudget",
+      "dataTableName": "FinBudget",
+      "sqlTableName": "fin_budget",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Budget, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "scenarioId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "entityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fiscalYear",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "FinInvoice",
+      "title": "Invoice",
+      "description": "Accounts Payable or Receivable invoice.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinInvoice",
+      "dataTableName": "FinInvoice",
+      "sqlTableName": "fin_invoice",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ partnerName }} - {{ totalAmount }} {{ currency }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "partnerName"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "legalEntityId",
+            "type",
+            "partnerName",
+            "invoiceDate",
+            "totalAmount",
+            "currency"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status"
+          ],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "legalEntityId",
+            "type"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify paid invoices.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "payments"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete approved or paid invoices.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "partnerName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "dueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "billingProfileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinBillingProfile",
+          "referenceField": "id"
+        },
+        {
+          "name": "subscriptionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinSubscription",
+          "referenceField": "id"
+        },
+        {
+          "name": "customerOrderId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "OpsCustomerOrder",
+          "referenceField": "id"
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subtotalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "openAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "disputeStatus",
+          "type": "string",
+          "description": "Allowed values: NONE, IN_DISPUTE, RESOLVED) (from accreceivable",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NONE",
+            "IN_DISPUTE",
+            "RESOLVED) (from accreceivable"
+          ],
+          "options": [
+            "NONE",
+            "IN_DISPUTE",
+            "RESOLVED) (from accreceivable"
+          ]
+        },
+        {
+          "name": "eInvoiceClearanceStatus",
+          "type": "string",
+          "description": "Allowed values: NOT_REQUIRED, PENDING, CLEARED, REJECTED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "CLEARED",
+            "REJECTED"
+          ],
+          "options": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "CLEARED",
+            "REJECTED"
+          ]
+        },
+        {
+          "name": "customerName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "legalEntity",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "legalEntityId",
+          "targetModel": "FinLegalEntity",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The legal entity this invoice belongs to."
+        },
+        {
+          "name": "payments",
+          "type": "hasMany",
+          "sourceModel": "FinInvoice",
+          "sourceField": "id",
+          "targetModel": "FinPayment",
+          "targetField": "invoiceId",
+          "throughModel": null,
+          "description": "Payments applied to this invoice."
+        },
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinInvoice account foreign key link to CrmAccount."
+        },
+        {
+          "name": "billingProfile",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "billingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinInvoice billingProfile foreign key link to FinBillingProfile."
+        },
+        {
+          "name": "subscription",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "subscriptionId",
+          "targetModel": "FinSubscription",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinInvoice subscription foreign key link to FinSubscription."
+        },
+        {
+          "name": "customerOrder",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "customerOrderId",
+          "targetModel": "OpsCustomerOrder",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinInvoice customerOrder foreign key link to OpsCustomerOrder."
+        }
+      ]
+    },
+    {
+      "name": "HrCase",
+      "title": "HR Case",
+      "description": "A support ticket or inquiry submitted by an employee for HR assistance.",
+      "domainName": "Rapider HR & Talent Suite",
+      "domainKey": "HR",
+      "datatableName": "HrCase",
+      "dataTableName": "HrCase",
+      "sqlTableName": "hr_case",
+      "isolationScope": "ENTERPRISE_SHARED_WITH_CONFIDENTIAL_VAULTS",
+      "titleFieldTemplate": "{{ caseNumber }} - {{ subject }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "subject",
+          "description",
+          "caseNumber"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "subject",
+            "description",
+            "status",
+            "priority"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "caseNumber"
+          ],
+          "additionalPrompt": "Generate a human-readable case number like HR-XXXX.",
+          "requireUserConfirmation": false
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "caseNumber"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Record reason for status change.",
+          "requireUserConfirmation": false,
+          "restrictedStates": [
+            {
+              "description": "Cannot update deleted cases.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": []
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": false,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "caseNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "employeeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requesterName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requesterEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requesterPhone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "departmentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "departmentName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assigneeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assigneeName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "serviceTypeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "serviceTypeName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isConfidential",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "slaDueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "slaStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "openedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "resolvedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "closedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "satisfactionRating",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "HrDepartment",
+      "title": "Department",
+      "description": "Organizational units within the company.",
+      "domainName": "Rapider HR & Talent Suite",
+      "domainKey": "HR",
+      "datatableName": "HrDepartment",
+      "dataTableName": "HrDepartment",
+      "sqlTableName": "hr_department",
+      "isolationScope": "ENTERPRISE_SHARED_WITH_CONFIDENTIAL_VAULTS",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "name"
+          ],
+          "immutableFields": [],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "description"
+          ],
+          "additionalPrompt": "Ensure code is short uppercase.",
+          "requireUserConfirmation": false
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "Department cannot be its own parent."
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 100
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "headId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentDepartmentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "costCenterCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "head",
+          "type": "belongsTo",
+          "sourceModel": "HrDepartment",
+          "sourceField": "headId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Employee who heads this department."
+        },
+        {
+          "name": "parentDepartment",
+          "type": "belongsTo",
+          "sourceModel": "HrDepartment",
+          "sourceField": "parentDepartmentId",
+          "targetModel": "HrDepartment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Parent department in the organizational hierarchy."
+        },
+        {
+          "name": "subDepartments",
+          "type": "hasMany",
+          "sourceModel": "HrDepartment",
+          "sourceField": "id",
+          "targetModel": "HrDepartment",
+          "targetField": "parentDepartmentId",
+          "throughModel": null,
+          "description": "Sub-departments under this department."
+        },
+        {
+          "name": "employees",
+          "type": "hasMany",
+          "sourceModel": "HrDepartment",
+          "sourceField": "id",
+          "targetModel": "HrEmployee",
+          "targetField": "departmentId",
+          "throughModel": null,
+          "description": "Employees in this department."
+        },
+        {
+          "name": "positions",
+          "type": "hasMany",
+          "sourceModel": "HrDepartment",
+          "sourceField": "id",
+          "targetModel": "HrPosition",
+          "targetField": "departmentId",
+          "throughModel": null,
+          "description": "Positions in this department."
+        }
+      ]
+    },
+    {
+      "name": "HrEmployee",
+      "title": "Employee",
+      "description": "Core profile representing an individual worker within the organization.",
+      "domainName": "Rapider HR & Talent Suite",
+      "domainKey": "HR",
+      "datatableName": "HrEmployee",
+      "dataTableName": "HrEmployee",
+      "sqlTableName": "hr_employee",
+      "isolationScope": "ENTERPRISE_SHARED_WITH_CONFIDENTIAL_VAULTS",
+      "titleFieldTemplate": "{{ firstName }} {{ lastName }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "firstName",
+          "lastName",
+          "email",
+          "jobTitle",
+          "employeeNumber"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "firstName",
+            "lastName",
+            "email",
+            "status"
+          ],
+          "immutableFields": [],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Ensure the email address is formatted correctly. If a department is mentioned, link the employee to the correct departmentId.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "If status is 'Active', a hireDate must be provided or assumed as today."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "When updating manager or department, suggest creating a Lifecycle Event.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Ensure the employee is not set as their own manager.",
+          "restrictedStates": [
+            {
+              "description": "Cannot update terminated employees without authorization.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 100,
+          "hiddenFields": [
+            "ssn"
+          ],
+          "maskedFields": [
+            "personalEmail",
+            "phone"
+          ],
+          "additionalPrompt": "Always show job title, department, and status."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "lifecycleEvents",
+            "documents",
+            "emergencyContacts"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Active employees must be terminated before deletion.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "employeeNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preferredName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "personalEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobTitle",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "workerType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "employmentType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "hireDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "departmentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "managerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "positionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobProfileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "locationId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "weeklyHours",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timeZone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "avatarColor",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "department",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "departmentId",
+          "targetModel": "HrDepartment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Department this employee belongs to."
+        },
+        {
+          "name": "manager",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "managerId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Manager this employee reports to."
+        },
+        {
+          "name": "position",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "positionId",
+          "targetModel": "HrPosition",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Specific position this employee holds."
+        },
+        {
+          "name": "jobProfile",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "jobProfileId",
+          "targetModel": "HrJobProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Job profile associated with this employee."
+        },
+        {
+          "name": "location",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "locationId",
+          "targetModel": "HrLocation",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Work location of this employee."
+        },
+        {
+          "name": "legalEntity",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "legalEntityId",
+          "targetModel": "FinLegalEntity",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Legal entity employing this person."
+        },
+        {
+          "name": "lifecycleEvents",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrLifecycleEvent",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Lifecycle events for this employee."
+        },
+        {
+          "name": "changeRequests",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrChangeRequest",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Pending and past change requests for this employee."
+        },
+        {
+          "name": "documents",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrDocumentRef",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Uploaded compliance and employment documents."
+        },
+        {
+          "name": "emergencyContacts",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrEmergencyContact",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Emergency contacts."
+        },
+        {
+          "name": "directReports",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrEmployee",
+          "targetField": "managerId",
+          "throughModel": null,
+          "description": "Direct reports who report to this manager."
+        }
+      ]
+    },
+    {
+      "name": "SupKnowledgeArticle",
+      "title": "KnowledgeArticle",
+      "description": "An article in the self-service knowledge base.",
+      "domainName": "Rapider Customer Support Suite",
+      "domainKey": "SUP",
+      "datatableName": "SupKnowledgeArticle",
+      "dataTableName": "SupKnowledgeArticle",
+      "sqlTableName": "sup_knowledge_article",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "content",
+          "category"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "title",
+            "content",
+            "authorId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "category"
+          ],
+          "additionalPrompt": "Ensure the content is formatted in Markdown.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Title must be descriptive."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "authorId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "If making significant changes, suggest updating the category as well.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Content cannot be empty.",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 5,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "When searching, prioritize articles where isPublished is true."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete an article that is currently published. Unpublish it first.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isPublished",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "authorId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "author",
+          "type": "belongsTo",
+          "sourceModel": "SupKnowledgeArticle",
+          "sourceField": "authorId",
+          "targetModel": "SupAgent",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The agent who wrote the article."
+        }
+      ]
+    },
+    {
+      "name": "SupTicket",
+      "title": "Case",
+      "description": "Represents a customer support issue or ticket.",
+      "domainName": "Rapider Customer Support Suite",
+      "domainKey": "SUP",
+      "datatableName": "SupTicket",
+      "dataTableName": "SupTicket",
+      "sqlTableName": "sup_ticket",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ subject }} - {{ status }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "subject",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "subject",
+            "accountId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status",
+            "priority"
+          ],
+          "additionalPrompt": "Set priority to High if words like 'urgent' or 'critical' are used.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "accountId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify closed cases.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Always list critical cases first."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete resolved cases.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "contactId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ticketNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "description": "Allowed values: PORTAL, EMAIL, CHAT, VOICE, FIELD_SERVICE, SOCIAL, API",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PORTAL",
+            "EMAIL",
+            "CHAT",
+            "VOICE",
+            "FIELD_SERVICE",
+            "SOCIAL",
+            "API"
+          ],
+          "options": [
+            "PORTAL",
+            "EMAIL",
+            "CHAT",
+            "VOICE",
+            "FIELD_SERVICE",
+            "SOCIAL",
+            "API"
+          ]
+        },
+        {
+          "name": "queueId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "SupQueue",
+          "referenceField": "id"
+        },
+        {
+          "name": "assetId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "OpsOperationsAsset",
+          "referenceField": "id"
+        },
+        {
+          "name": "firstResponseDueAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "resolutionDueAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "csatScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assigneeId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "slaPolicyId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this case is associated with."
+        },
+        {
+          "name": "contact",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "contactId",
+          "targetModel": "CrmContact",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The individual contact associated with this case."
+        },
+        {
+          "name": "queue",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "queueId",
+          "targetModel": "SupQueue",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket queue foreign key link to SupQueue."
+        },
+        {
+          "name": "assigneeEmployee",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "assigneeEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket assigneeEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "slaPolicy",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "slaPolicyId",
+          "targetModel": "SupSlaPolicy",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket slaPolicy foreign key link to SupSlaPolicy."
+        },
+        {
+          "name": "asset",
+          "type": "belongsTo",
+          "sourceModel": "SupTicket",
+          "sourceField": "assetId",
+          "targetModel": "OpsOperationsAsset",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "SupTicket asset foreign key link to OpsOperationsAsset."
+        }
+      ]
+    },
+    {
+      "name": "AiaSearchConnectorSource",
+      "title": "Search Connector Source",
+      "description": "`COL_WIKI_092` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchConnectorSource",
+      "dataTableName": "AiaSearchConnectorSource",
+      "sqlTableName": "aia_search_connector_source",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Connector Source, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "connectorKey",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceCategory",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchIndexDocument",
+      "title": "Search Index Document",
+      "description": "`CONFIDENTIAL` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchIndexDocument",
+      "dataTableName": "AiaSearchIndexDocument",
+      "sqlTableName": "aia_search_index_document",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Index Document, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "docPointerKey",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceSuite",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceModel",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceRecordId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "deepLinkRoute",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "classification",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchGoLink",
+      "title": "Search Go Link",
+      "description": "`ownerEmployeeId` -> `HrEmployee` (`HR`); `departmentId` -> `HrDepartment` (`HR`)",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchGoLink",
+      "dataTableName": "AiaSearchGoLink",
+      "sqlTableName": "aia_search_go_link",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "description",
+          "slug"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Go Link, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "slug",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "targetUrlOrRoute",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "redirectCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isVerifiedCorporate",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchVerifiedAnswer",
+      "title": "Search Verified Answer",
+      "description": "`PINNED_ANNOUNCEMENT`), `termOrQuestion` (string), `triggerQueriesJson` (json), `answerMarkdown` (string), `citationsJson` (json: recordId, version, page), `verifierOnCallPhone` (string), `verifyIntervalDays` (int), `lastVerifiedAt` (datetime), `nextVerifyDueAt` (datetime), `verificationStatus` (`VERIFIED_FRESH` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchVerifiedAnswer",
+      "dataTableName": "AiaSearchVerifiedAnswer",
+      "sqlTableName": "aia_search_verified_answer",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Verified Answer, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "cardCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "cardKind",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchKnowledgeGap",
+      "title": "Search Knowledge Gap",
+      "description": "`POLICY_CONTRADICTION` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchKnowledgeGap",
+      "dataTableName": "AiaSearchKnowledgeGap",
+      "sqlTableName": "aia_search_knowledge_gap",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Knowledge Gap, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "gapNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "gapKind",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchRelevanceRule",
+      "title": "Search Relevance Rule",
+      "description": "`RECENCY_DECAY` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchRelevanceRule",
+      "dataTableName": "AiaSearchRelevanceRule",
+      "sqlTableName": "aia_search_relevance_rule",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Relevance Rule, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "ruleCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ruleType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "AiaSearchSessionLog",
+      "title": "Search Session Log",
+      "description": "`DEEP_RESEARCH`), `aclPrincipalSnapshotHash` (string), `retrievedAuthorizedCount` (int), `excludedRestrictedCount` (int), `abstainedNoSource` (boolean), `faithfulnessScore` (Decimal128), `latencyMs` (int), `userFeedback` (`NONE` \\",
+      "domainName": "Rapider AI & Automation Suite",
+      "domainKey": "AIA",
+      "datatableName": "AiaSearchSessionLog",
+      "dataTableName": "AiaSearchSessionLog",
+      "sqlTableName": "aia_search_session_log",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Search Session Log, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "sessionRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "queryMode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "webPages": [
+    {
+      "name": "Unified Search & Deep Research",
+      "route": "enterprise-search",
+      "htmlFilePath": "pages/enterprise-search/enterprise-search.html",
+      "title": "Unified Search & Deep Research",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "Instant hybrid search + RAG/Deep Research mode toggle (findSWR/countSWR recent sessions), Suite/Type/Date filter pills, #activeFilterTagsBar with Clear all, Genius Cards, SME Finder, clickable session -> research-session-detail."
+    },
+    {
+      "name": "Verified Answers & Acronyms",
+      "route": "verified-answers-glossary",
+      "htmlFilePath": "pages/verified-answers-glossary/verified-answers-glossary.html",
+      "title": "Verified Answers & Acronyms",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "Table of AiaSearchVerifiedAnswer Q&A cards and Acronym/Codename definitions, verification expiry badges, icon+text Edit and icon-only Delete."
+    },
+    {
+      "name": "go/ Links & Shortcuts",
+      "route": "go-links-directory",
+      "htmlFilePath": "pages/go-links-directory/go-links-directory.html",
+      "title": "go/ Links & Shortcuts",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "Searchable registry of AiaSearchGoLink shortcuts (go/benefits, go/incident-sop), owner HrEmployee, redirect counts, and + New go/ Link button."
+    },
+    {
+      "name": "Knowledge Gaps & Hygiene",
+      "route": "knowledge-gaps-board",
+      "htmlFilePath": "pages/knowledge-gaps-board/knowledge-gaps-board.html",
+      "title": "Knowledge Gaps & Hygiene",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "<rapider-kanban> board (DETECTED_GAP -> SME_ASSIGNED -> DRAFTING_IN_SUITE -> VERIFIED_PINNED -> RESOLVED) + list toggle for unanswered clusters & policy contradictions."
+    },
+    {
+      "name": "Suite & External Connectors",
+      "route": "connector-sources",
+      "htmlFilePath": "pages/connector-sources/connector-sources.html",
+      "title": "Suite & External Connectors",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "Health table of AiaSearchConnectorSource native Rapider Suite indexers and external connectors, sync lag, indexed chunk counts, clickable name -> connector-source-detail."
+    },
+    {
+      "name": "Synonyms & Ranking Rules",
+      "route": "relevance-rules",
+      "htmlFilePath": "pages/relevance-rules/relevance-rules.html",
+      "title": "Synonyms & Ranking Rules",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "Registry of AiaSearchRelevanceRule synonym rings, authority weights, and recency decay policies with inline ranking preview."
+    },
+    {
+      "name": "ACL Simulator & Audit Log",
+      "route": "acl-retrieval-audit",
+      "htmlFilePath": "pages/acl-retrieval-audit/acl-retrieval-audit.html",
+      "title": "ACL Simulator & Audit Log",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "Role/Department ACL Oversharing Simulator (metadata envelope check) + AiaSearchSessionLog latency, faithfulness, deflection rate, and Decimal128 cost telemetry."
+    },
+    {
+      "name": "Grounded Answer & Citations",
+      "route": "research-session-detail",
+      "htmlFilePath": "pages/research-session-detail/research-session-detail.html",
+      "title": "Grounded Answer & Citations",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 8,
+      "developmentDetails": "Full projectChannelMessage Deep Research thread, clickable passage-highlighted citations ([Doc v2, p.4]), NLI faithfulness badges, 1-click Escalate to SupTicket/HrCase, and #btnGoBack."
+    },
+    {
+      "name": "Connector Sync & ACL Inspector",
+      "route": "connector-source-detail",
+      "htmlFilePath": "pages/connector-source-detail/connector-source-detail.html",
+      "title": "Connector Sync & ACL Inspector",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 9,
+      "developmentDetails": "Incremental CDC cursor status, ACL group sync diagnostics, Shield RESTRICTED exclusion counters, manual re-index trigger, and #btnGoBack."
+    },
+    {
+      "name": "Verified Card & Acronym Drawer",
+      "route": "verified-answer-drawer",
+      "htmlFilePath": "pages/verified-answer-drawer/verified-answer-drawer.html",
+      "title": "Verified Card & Acronym Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Author/edit AiaSearchVerifiedAnswer markdown, cited source bindings, verifyIntervalDays, SME on-call phone (<rapider-phone-input>), and try/catch/finally auto-close."
+    },
+    {
+      "name": "go/ Link & Synonym Drawer",
+      "route": "go-link-rule-drawer",
+      "htmlFilePath": "pages/go-link-rule-drawer/go-link-rule-drawer.html",
+      "title": "go/ Link & Synonym Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Create/edit go/{slug} mappings or AiaSearchRelevanceRule synonym/boost entries with try/catch/finally auto-close."
+    }
+  ],
+  "workflows": [],
+  "variables": [],
+  "tools": [],
+  "pages": [
+    {
+      "name": "Unified Search & Deep Research",
+      "route": "enterprise-search",
+      "htmlFilePath": "pages/enterprise-search/enterprise-search.html",
+      "title": "Unified Search & Deep Research",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "Instant hybrid search + RAG/Deep Research mode toggle (findSWR/countSWR recent sessions), Suite/Type/Date filter pills, #activeFilterTagsBar with Clear all, Genius Cards, SME Finder, clickable session -> research-session-detail."
+    },
+    {
+      "name": "Verified Answers & Acronyms",
+      "route": "verified-answers-glossary",
+      "htmlFilePath": "pages/verified-answers-glossary/verified-answers-glossary.html",
+      "title": "Verified Answers & Acronyms",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "Table of AiaSearchVerifiedAnswer Q&A cards and Acronym/Codename definitions, verification expiry badges, icon+text Edit and icon-only Delete."
+    },
+    {
+      "name": "go/ Links & Shortcuts",
+      "route": "go-links-directory",
+      "htmlFilePath": "pages/go-links-directory/go-links-directory.html",
+      "title": "go/ Links & Shortcuts",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "Searchable registry of AiaSearchGoLink shortcuts (go/benefits, go/incident-sop), owner HrEmployee, redirect counts, and + New go/ Link button."
+    },
+    {
+      "name": "Knowledge Gaps & Hygiene",
+      "route": "knowledge-gaps-board",
+      "htmlFilePath": "pages/knowledge-gaps-board/knowledge-gaps-board.html",
+      "title": "Knowledge Gaps & Hygiene",
+      "group": "Search & Knowledge",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "<rapider-kanban> board (DETECTED_GAP -> SME_ASSIGNED -> DRAFTING_IN_SUITE -> VERIFIED_PINNED -> RESOLVED) + list toggle for unanswered clusters & policy contradictions."
+    },
+    {
+      "name": "Suite & External Connectors",
+      "route": "connector-sources",
+      "htmlFilePath": "pages/connector-sources/connector-sources.html",
+      "title": "Suite & External Connectors",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "Health table of AiaSearchConnectorSource native Rapider Suite indexers and external connectors, sync lag, indexed chunk counts, clickable name -> connector-source-detail."
+    },
+    {
+      "name": "Synonyms & Ranking Rules",
+      "route": "relevance-rules",
+      "htmlFilePath": "pages/relevance-rules/relevance-rules.html",
+      "title": "Synonyms & Ranking Rules",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "Registry of AiaSearchRelevanceRule synonym rings, authority weights, and recency decay policies with inline ranking preview."
+    },
+    {
+      "name": "ACL Simulator & Audit Log",
+      "route": "acl-retrieval-audit",
+      "htmlFilePath": "pages/acl-retrieval-audit/acl-retrieval-audit.html",
+      "title": "ACL Simulator & Audit Log",
+      "group": "Indexing & Governance",
+      "icon": "fas fa-robot",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "Role/Department ACL Oversharing Simulator (metadata envelope check) + AiaSearchSessionLog latency, faithfulness, deflection rate, and Decimal128 cost telemetry."
+    },
+    {
+      "name": "Grounded Answer & Citations",
+      "route": "research-session-detail",
+      "htmlFilePath": "pages/research-session-detail/research-session-detail.html",
+      "title": "Grounded Answer & Citations",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 8,
+      "developmentDetails": "Full projectChannelMessage Deep Research thread, clickable passage-highlighted citations ([Doc v2, p.4]), NLI faithfulness badges, 1-click Escalate to SupTicket/HrCase, and #btnGoBack."
+    },
+    {
+      "name": "Connector Sync & ACL Inspector",
+      "route": "connector-source-detail",
+      "htmlFilePath": "pages/connector-source-detail/connector-source-detail.html",
+      "title": "Connector Sync & ACL Inspector",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 9,
+      "developmentDetails": "Incremental CDC cursor status, ACL group sync diagnostics, Shield RESTRICTED exclusion counters, manual re-index trigger, and #btnGoBack."
+    },
+    {
+      "name": "Verified Card & Acronym Drawer",
+      "route": "verified-answer-drawer",
+      "htmlFilePath": "pages/verified-answer-drawer/verified-answer-drawer.html",
+      "title": "Verified Card & Acronym Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Author/edit AiaSearchVerifiedAnswer markdown, cited source bindings, verifyIntervalDays, SME on-call phone (<rapider-phone-input>), and try/catch/finally auto-close."
+    },
+    {
+      "name": "go/ Link & Synonym Drawer",
+      "route": "go-link-rule-drawer",
+      "htmlFilePath": "pages/go-link-rule-drawer/go-link-rule-drawer.html",
+      "title": "go/ Link & Synonym Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-robot",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Create/edit go/{slug} mappings or AiaSearchRelevanceRule synonym/boost entries with try/catch/finally auto-close."
+    }
+  ]
+}
